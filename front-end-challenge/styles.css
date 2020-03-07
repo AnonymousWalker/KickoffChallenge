@@ -1,3 +1,8 @@
+body {
+	background-image: url(./assets/NY-background.jpg);
+	background-size: cover;
+}
+
 #logo {
     height: 190px;
     max-width: 500px;
