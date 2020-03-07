@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#check-form").submit((function(event) {
+							event.preventDefault();
+							var val = $("#input-field").val();
+							if (isNaN(val)) {
+								$("#output").html('False');
+							}
+							else 
+								var output = isPrime(val)? "Yes" : "No";
+								$("#output").html(output);
+						}));
+		});
+
+		function isPrime(number){
+			if (number < 2) return false;
+			for (var i = 2; i*i<=number;i++){
+				if (number % i == 0) return false;
+			}
+			return true;
+		}
+	</script>
+</head>
+<body>
+	<div>
+		<form id="check-form">
+			<input type="text" id="input-field" placeholder="Enter prime number... ">
+			<input type="submit" value="Check" />
+		</form>
+	</div>
+	<br/>
+	<h3 id="output">
+
+	</h3>
+</body>
+
+</html>
