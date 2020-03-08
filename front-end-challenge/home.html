@@ -1,35 +1,48 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="styles.css" />
-        <nav>
-            <div id="logo-container">
-                <img id="logo" src="./assets/logo.png" />
-            </div>
-            <div>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="profile.html">Profile Page</a></li>
-                </ul>
-            </div>
-        </nav>
-    </head>
-    <body> 
-        <div id="imageContainer" class ="">
-            <img id="galleryPic" src="./assets/image1.jpg" />
-            <img id="galleryPic" src="./assets/image2.jpg"/>
-            <img id="galleryPic" src="./assets/image3.jpg"/>
-            <img id="galleryPic" src="./assets/image4.jpg"/>
-            <img id="galleryPic" src="./assets/image5.jpg"/>
-            <img id="galleryPic" src="./assets/image6.jpg"/>
-            <img id="galleryPic" src="./assets/image7.jpg"/>
-            <img id="galleryPic" src="./assets/image8.jpg"/>
-            <img id="galleryPic" src="./assets/image9.jpg"/>
-            <img id="galleryPic" src="./assets/image10.jpg"/>
-            <img id="galleryPic" src="./assets/image11.jpg"/>
-            <img id="galleryPic" src="./assets/image12.jpg"/>
-            <img id="galleryPic" src="./assets/image13.jpg"/>
-            <img id="galleryPic" src="./assets/image14.jpg"/>
-            <img id="galleryPic" src="./assets/image15.jpg"/>
-         </div>
-    </body>
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <nav>
+        <div id="logo-container">
+            <img id="logo" src="./assets/logo.png" />
+        </div>
+        <ul id="nav-bar-ul" class="nav-bar">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="profile.html">Profile Page</a></li>
+            <a class="nav-toggle-btn" onclick="toggleNavBar()">
+                <img height="30" width="30" src="assets/nav-toggle-icon.png">
+            </a>
+        </ul>
+    </nav>
+</head>
+<body> 
+    <div id="imageContainer" class ="">
+        <img id="galleryPic" src="./assets/image1.jpg" />
+        <img id="galleryPic" src="./assets/image2.jpg"/>
+        <img id="galleryPic" src="./assets/image3.jpg"/>
+        <img id="galleryPic" src="./assets/image4.jpg"/>
+        <img id="galleryPic" src="./assets/image5.jpg"/>
+        <img id="galleryPic" src="./assets/image6.jpg"/>
+        <img id="galleryPic" src="./assets/image7.jpg"/>
+        <img id="galleryPic" src="./assets/image8.jpg"/>
+        <img id="galleryPic" src="./assets/image9.jpg"/>
+        <img id="galleryPic" src="./assets/image10.jpg"/>
+        <img id="galleryPic" src="./assets/image11.jpg"/>
+        <img id="galleryPic" src="./assets/image12.jpg"/>
+        <img id="galleryPic" src="./assets/image13.jpg"/>
+        <img id="galleryPic" src="./assets/image14.jpg"/>
+        <img id="galleryPic" src="./assets/image15.jpg"/>
+    </div>
+
+
+    <script type="text/javascript">
+        function toggleNavBar(){
+            var navBar = document.getElementById("nav-bar-ul");
+            if (navBar.className === "nav-bar") {
+                navBar.className += " responsive";
+            } else {
+                navBar.className = "nav-bar";
+            }
+        }
+    </script>
+</body>
 </html>

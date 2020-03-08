@@ -1,16 +1,80 @@
+body { margin: 0; }
 #logo-container {
 	height: 100px;
+    text-align: center;
 }
+
 #logo {
 	margin: 5px;
     height: 90;
     width: 87;
     top: 10px;
-    left: 50%;
-    position: fixed;
 }
+
+#nav-bar-ul {
+    list-style-type:none;
+    background-color: #adcaf373;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    display: flex;
+    justify-content: center;
+    min-height: 50px;
+}
+
+#nav-bar-ul li {
+    overflow: hidden;
+    width: auto;
+    box-shadow: -5px 0 0 -4px #CED1D4, 5px 0 0 -4px #CED1D4;
+    width: 20%;
+}
+
+#nav-bar-ul a {
+    text-decoration: none;
+    display: block;
+    line-height: 50px;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+}
+
+#nav-bar-ul .nav-toggle-btn {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    left: 0;
+    position: absolute;
+}
+
+#nav-bar-ul a:hover {
+    background-color: #f9f0f0f5;
+}
+
+@media screen and (max-width: 700px) {
+    #nav-bar-ul li {
+        display: none;
+    }
+
+    #nav-bar-ul .nav-toggle-btn {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    #nav-bar-ul.responsive {
+        flex-wrap: wrap;
+        padding-inline-start: 50px;
+    }
+
+    #nav-bar-ul.responsive li {
+        width: 100%;
+        display: block;
+    }
+}
+
 #galleryPic {
     display: block;
     width: 200px;
     height: 100px;
 }
+
