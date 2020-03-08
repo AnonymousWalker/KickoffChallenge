@@ -1,11 +1,13 @@
-body {
-	background-image: url(./assets/NY-background.jpg);
-	background-size: cover;
+#logo-container {
+	height: 100px;
 }
-
 #logo {
-    height: 190px;
-    max-width: 500px;
+	margin: 5px;
+    height: 90;
+    width: 87;
+    top: 10px;
+    left: 50%;
+    position: fixed;
 }
 #galleryPic {
     display: block;
