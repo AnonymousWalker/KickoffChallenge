@@ -7,7 +7,10 @@
 			$("#check-form").submit((function(event) {
 							event.preventDefault();
 							var val = $("#input-field").val();
-							if (isNaN(val)) {
+							if (val == ""){
+								$("#output").html('Empty!');
+							}
+							else if (isNaN(val)) {
 								$("#output").html('False');
 							}
 							else 
