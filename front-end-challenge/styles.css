@@ -1,4 +1,7 @@
-body { margin: 0; }
+body { 
+    margin: 0; 
+}
+
 #logo-container {
 	height: 100px;
     text-align: center;
@@ -13,7 +16,7 @@ body { margin: 0; }
 
 #nav-bar-ul {
     list-style-type:none;
-    background-color: #adcaf373;
+    background-color: #6c96d291;;
     padding-top: 2px;
     padding-bottom: 2px;
     display: flex;
@@ -25,17 +28,24 @@ body { margin: 0; }
 #nav-bar-ul li {
     overflow: hidden;
     width: auto;
-    box-shadow: -5px 0 0 -4px #CED1D4, 5px 0 0 -4px #CED1D4;
+    box-shadow: -5px 0 0 -4px #3626a2, 5px 0 0 -4px #3626a2;
     width: 20%;
 }
 
 #nav-bar-ul a {
+    font-family: Arial;
+    font-size: 20px;
+    color: #2b7adc !important;
     text-decoration: none;
     display: block;
     line-height: 50px;
     padding-right: 15px;
     padding-left: 15px;
     text-align: center;
+}
+
+#nav-bar-ul a:visited {
+    color: initial;
 }
 
 #nav-bar-ul .nav-toggle-btn {

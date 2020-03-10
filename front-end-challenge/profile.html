@@ -1,52 +1,78 @@
 <html>
-    <head>
-        <nav>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="profile-style.css">
+    <nav>
+        <div id="logo-container">
             <img id="logo" src="./assets/logo.png" />
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="profile.html">Profile Page</a></li>
-                </ul>
-        </nav>
-    </head>
+        </div>
+        <ul id="nav-bar-ul" class="nav-bar">
+            <span>
+                <a class="nav-toggle-btn" onclick="toggleNavBar()">
+                    <img height="30" width="30" src="assets/nav-toggle-icon.png">
+                </a>
+            </span>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="profile.html">Profile Page</a></li>
+        </ul>
+    </nav>
+</head>
 
-    <body>
-        <div>
+<body>
+    <div>
+        <div id="profile-heading">
             <div>
-                <img src="./assets/profile-picture.jpg" />
-                <h2>Sophie Walters</h2>
-                
-                <ul>
+                <img id="profile-image" src="./assets/profile-picture.jpg" />
+            </div>
+            <div id="info-group">
+                <h2 id="name-heading">Sophie Walters</h2>
+
+                <ul id="user-list">
                     <li>Denver</li>
                     <li>Graphic Designer/ Photographer</li>
                     <li>Winner of the Orlando Design Expo, 2019</li>
                 </ul>
-             </div>
-            <div>
-                <p>Hi, my name is Sophie Walters....</p>
-                <p>the rest of this will be place holder text</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non fringilla augue, convallis condimentum ligula. </p>
-                <p>Curabitur semper, sapien ac laoreet volutpat, nisi justo feugiat ligula, a porta enim ipsum dapibus ex. Suspendisse  </p>
-                <p> eros odio, eleifend a dictum vitae, interdum sit amet turpis. Donec ac quam ut nisi accumsan consequat. Donec consequat</p>
-                <p>diam in ligula rutrum vulputate. Suspendisse consequat, orci ut condimentum mattis, felis metus facilisis eros, eu efficitur </p>
-                <p> massa augue vel felis. Nunc sollicitudin luctus blandit. Aenean sit amet velit ante. Integer congue ut mauris id ornare. </p>
-                <p>Aliquam erat volutpat. Nam fermentum massa eu mi ultrices bibendum. Praesent tincidunt orci a dui posuere efficitur.</p>
-            </div>
-            <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non fringilla augue, convallis condimentum ligula. </p>
-                    <p>Curabitur semper, sapien ac laoreet volutpat, nisi justo feugiat ligula, a porta enim ipsum dapibus ex. Suspendisse  </p>
-                    <p> eros odio, eleifend a dictum vitae, interdum sit amet turpis. Donec ac quam ut nisi accumsan consequat. Donec consequat</p>
-                    <p>diam in ligula rutrum vulputate. Suspendisse consequat, orci ut condimentum mattis, felis metus facilisis eros, eu efficitur </p>
-                    <p> massa augue vel felis. Nunc sollicitudin luctus blandit. Aenean sit amet velit ante. Integer congue ut mauris id ornare. </p>
-                    <p>Aliquam erat volutpat. Nam fermentum massa eu mi ultrices bibendum. Praesent tincidunt orci a dui posuere efficitur.</p>
-                </div>
-            <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non fringilla augue, convallis condimentum ligula. </p>
-                    <p>Curabitur semper, sapien ac laoreet volutpat, nisi justo feugiat ligula, a porta enim ipsum dapibus ex. Suspendisse  </p>
-                    <p> eros odio, eleifend a dictum vitae, interdum sit amet turpis. Donec ac quam ut nisi accumsan consequat. Donec consequat</p>
-                    <p>diam in ligula rutrum vulputate. Suspendisse consequat, orci ut condimentum mattis, felis metus facilisis eros, eu efficitur </p>
-                    <p> massa augue vel felis. Nunc sollicitudin luctus blandit. Aenean sit amet velit ante. Integer congue ut mauris id ornare. </p>
-                    <p>Aliquam erat volutpat. Nam fermentum massa eu mi ultrices bibendum. Praesent tincidunt orci a dui posuere efficitur.</p>
             </div>
         </div>
-    </body>
+        <div id="paragraph1">
+            <p>Hi, my name is Sophie Walters....</p>
+            <p>the rest of this will be place holder text</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non fringilla augue, convallis condimentum ligula. </p>
+            <p>Curabitur semper, sapien ac laoreet volutpat, nisi justo feugiat ligula, a porta enim ipsum dapibus ex. Suspendisse  </p>
+            <p> eros odio, eleifend a dictum vitae, interdum sit amet turpis. Donec ac quam ut nisi accumsan consequat. Donec consequat</p>
+            <p>diam in ligula rutrum vulputate. Suspendisse consequat, orci ut condimentum mattis, felis metus facilisis eros, eu efficitur </p>
+            <p> massa augue vel felis. Nunc sollicitudin luctus blandit. Aenean sit amet velit ante. Integer congue ut mauris id ornare. </p>
+            <p>Aliquam erat volutpat. Nam fermentum massa eu mi ultrices bibendum. Praesent tincidunt orci a dui posuere efficitur.</p>
+        </div>
+        <div id="paragraph2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non fringilla augue, convallis condimentum ligula. </p>
+            <p>Curabitur semper, sapien ac laoreet volutpat, nisi justo feugiat ligula, a porta enim ipsum dapibus ex. Suspendisse  </p>
+            <p> eros odio, eleifend a dictum vitae, interdum sit amet turpis. Donec ac quam ut nisi accumsan consequat. Donec consequat</p>
+            <p>diam in ligula rutrum vulputate. Suspendisse consequat, orci ut condimentum mattis, felis metus facilisis eros, eu efficitur </p>
+            <p> massa augue vel felis. Nunc sollicitudin luctus blandit. Aenean sit amet velit ante. Integer congue ut mauris id ornare. </p>
+            <p>Aliquam erat volutpat. Nam fermentum massa eu mi ultrices bibendum. Praesent tincidunt orci a dui posuere efficitur.</p>
+        </div>
+        <div id="paragraph3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non fringilla augue, convallis condimentum ligula. </p>
+            <p>Curabitur semper, sapien ac laoreet volutpat, nisi justo feugiat ligula, a porta enim ipsum dapibus ex. Suspendisse  </p>
+            <p> eros odio, eleifend a dictum vitae, interdum sit amet turpis. Donec ac quam ut nisi accumsan consequat. Donec consequat</p>
+            <p>diam in ligula rutrum vulputate. Suspendisse consequat, orci ut condimentum mattis, felis metus facilisis eros, eu efficitur </p>
+            <p> massa augue vel felis. Nunc sollicitudin luctus blandit. Aenean sit amet velit ante. Integer congue ut mauris id ornare. </p>
+            <p>Aliquam erat volutpat. Nam fermentum massa eu mi ultrices bibendum. Praesent tincidunt orci a dui posuere efficitur.</p>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        function toggleNavBar(){
+            var navBar = document.getElementById("nav-bar-ul");
+            if (navBar.className === "nav-bar") {
+                navBar.className += " responsive";
+            } else {
+                navBar.className = "nav-bar";
+            }
+        }
+    </script>
+</body>
 </html>
